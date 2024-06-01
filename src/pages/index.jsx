@@ -16,6 +16,6 @@ const data = await response.json();
 document.querySelector('#root').innerHTML = render(
   <div className="container">
    <Header title="Nemovitosti v nabídce" />
-   <Estate title={data.title} photo={data.photo} text={data.text} location={data.location} price={data.price} />
+   <Estate title={data.title} photo={data.photo} text={data.text} city={data.city} price={data.price} />
   </div>
 );
